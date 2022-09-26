@@ -11,10 +11,14 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <form action="https://mate_academy_form_lesson.herokuapp.com/create_application"
-    method="post">
+    <form
+      action="https://mate_academy_form_lesson.herokuapp.com/create_application"
+      method="post">
+
       <fieldset class="fieldset">
-        <legend>Personal information</legend>
+        <legend>
+          Personal information
+        </legend>
 
         <label class="form__field">
           Surname:
@@ -22,6 +26,7 @@
             type="text"
             name="surname"
             autocomplete="off"
+            required
           >
         </label>
 
@@ -43,22 +48,33 @@
             value="12"
             max="100"
             min="1"
+            required
           >
         </label>
 
         <label class="form__field">
           Full date of birth:
-          <input type="date" name="date">
+          <input
+            type="date"
+            name="date"
+            required
+          >
         </label>
 
-        <label class="form__field last__field">
+        <label class="form__field">
           I accept the term of the agreement
-          <input type="checkbox" name="terms">
+          <input
+            type="checkbox"
+            name="terms"
+            required
+          >
         </label>
       </fieldset>
 
       <fieldset class="fieldset">
-        <legend>Registration</legend>
+        <legend>
+          Registration
+        </legend>
 
         <label class="form__field">
           E-mail:
@@ -67,10 +83,11 @@
             name="email"
             placeholder="email@example.com"
             autocomplete="off"
+            required
           >
         </label>
 
-        <label class="form__field last__field">
+        <label class="form__field">
           Password:
           <input
             type="password"
@@ -78,42 +95,53 @@
             minlength="5"
             maxlength="20"
             autocomplete="off"
+            required
           >
         </label>
       </fieldset>
 
       <fieldset class="fieldset">
-        <legend>An interesting fact about you!
+        <legend>
+          An interesting fact about you!
         </legend>
 
         <label class="form__field">
           Do you love cats?
-          <input
-            type="radio"
-            name="catlover"
-            value="yes"
-          >
-          Yes
+          <label>
+            <input
+              type="radio"
+              name="catLover"
+              value="yes"
+              required
+            >
+              Yes
+          </label>
 
-          <input
-            type="radio"
-            name="catlover"
-            value="yes"
-          >
-          No
-
+          <label>
+            <input
+              type="radio"
+              name="catLover"
+              value="no"
+              required
+            >
+              No
+          </label>
         </label>
 
         <label class="form__field">
           What is your favorite color?
-          <input type="color">
+          <input
+            type="color"
+            required
+          >
         </label>
 
         <label class="form__field">
           What time do you go to bed?
           <input
-          type="time"
-          step="1"
+            type="time"
+            step="1"
+            required
           >
         </label>
 
@@ -130,18 +158,22 @@
           </select>
         </label>
 
-        <label class="form__field last__field">
+        <label class="form__field">
           How do you rate our work?
           <input
-          type="range"
-          name="rate"
-          value="0"
+            type="range"
+            name="rate"
+            value="0"
+            required
           >
         </label>
       </fieldset>
 
       <fieldset class="fieldset">
-        <legend>Additional info:</legend>
+        <legend>
+          Additional info:
+        </legend>
+
         <label class="form__field">
           Comments:
           <textarea

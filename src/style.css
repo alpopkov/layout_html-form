@@ -1,10 +1,6 @@
-.form__field {
+.form__field:not(:last-child) {
   display: block;
   margin-bottom: 10px;
-}
-
-.last__field {
-  margin-bottom: 0;
 }
 
 .fieldset {
